@@ -6,9 +6,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/jean/codeTemplateCli/pkg/config"
-	"github.com/jean/codeTemplateCli/pkg/scaffold"
-	tmplpkg "github.com/jean/codeTemplateCli/pkg/template"
+	"github.com/jean3690/ct-cli/pkg/config"
+	"github.com/jean3690/ct-cli/pkg/scaffold"
+	tmplpkg "github.com/jean3690/ct-cli/pkg/template"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 )

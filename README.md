@@ -11,13 +11,13 @@ A CLI tool for managing code templates, scaffolding projects, and organizing cod
 ### Installation
 
 ```bash
-go install github.com/jean/codeTemplateCli@latest
+go install github.com/jean3690/ct-cli@latest
 ```
 
 Or build from source:
 
 ```bash
-git clone https://github.com/jean/codeTemplateCli.git
+git clone https://github.com/jean3690/ct-cli.git
 cd codeTemplateCli
 go build -o ct-cli .
 ```
@@ -137,13 +137,13 @@ Data stored under `~/.codeTemplate/` (override with `CT_HOME`):
 ### 安装
 
 ```bash
-go install github.com/jean/codeTemplateCli@latest
+go install github.com/jean3690/ct-cli@latest
 ```
 
 或从源码编译：
 
 ```bash
-git clone https://github.com/jean/codeTemplateCli.git
+git clone https://github.com/jean3690/ct-cli.git
 cd codeTemplateCli
 go build -o ct-cli .
 ```

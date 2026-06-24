@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"path/filepath"
 
-	"github.com/jean/codeTemplateCli/pkg/config"
-	tmplpkg "github.com/jean/codeTemplateCli/pkg/template"
+	"github.com/jean3690/ct-cli/pkg/config"
+	tmplpkg "github.com/jean3690/ct-cli/pkg/template"
 	"github.com/spf13/cobra"
 )
 

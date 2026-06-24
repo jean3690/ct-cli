@@ -5,7 +5,7 @@ import (
 	"regexp"
 
 	"github.com/AlecAivazis/survey/v2"
-	"github.com/jean/codeTemplateCli/pkg/engine"
+	"github.com/jean3690/ct-cli/pkg/engine"
 )
 
 // CollectVariables prompts the user interactively for any missing required/optional variables.

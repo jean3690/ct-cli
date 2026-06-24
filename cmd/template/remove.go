@@ -3,7 +3,7 @@ package template
 import (
 	"fmt"
 
-	tmplpkg "github.com/jean/codeTemplateCli/pkg/template"
+	tmplpkg "github.com/jean3690/ct-cli/pkg/template"
 	"github.com/spf13/cobra"
 )
 

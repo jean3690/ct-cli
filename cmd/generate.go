@@ -3,7 +3,7 @@ package cmd
 import (
 	"fmt"
 
-	"github.com/jean/codeTemplateCli/pkg/scaffold"
+	"github.com/jean3690/ct-cli/pkg/scaffold"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 )

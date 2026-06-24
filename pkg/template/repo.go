@@ -6,7 +6,7 @@ import (
 	"os/exec"
 	"path/filepath"
 
-	"github.com/jean/codeTemplateCli/pkg/config"
+	"github.com/jean3690/ct-cli/pkg/config"
 )
 
 // ImportFromPath imports a template from a local directory into the templates store.

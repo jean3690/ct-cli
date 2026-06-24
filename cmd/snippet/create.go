@@ -5,8 +5,8 @@ import (
 	"strings"
 
 	"github.com/AlecAivazis/survey/v2"
-	"github.com/jean/codeTemplateCli/pkg/config"
-	"github.com/jean/codeTemplateCli/pkg/snippet"
+	"github.com/jean3690/ct-cli/pkg/config"
+	"github.com/jean3690/ct-cli/pkg/snippet"
 	"github.com/spf13/cobra"
 )
 

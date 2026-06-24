@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"path/filepath"
 
-	"github.com/jean/codeTemplateCli/pkg/config"
-	"github.com/jean/codeTemplateCli/pkg/engine"
-	"github.com/jean/codeTemplateCli/pkg/prompts"
-	tmplpkg "github.com/jean/codeTemplateCli/pkg/template"
+	"github.com/jean3690/ct-cli/pkg/config"
+	"github.com/jean3690/ct-cli/pkg/engine"
+	"github.com/jean3690/ct-cli/pkg/prompts"
+	tmplpkg "github.com/jean3690/ct-cli/pkg/template"
 )
 
 // loadTemplateAndVars resolves a template by name, loads its manifest,

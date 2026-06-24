@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/jean/codeTemplateCli/cmd/snippet"
-	"github.com/jean/codeTemplateCli/cmd/template"
-	"github.com/jean/codeTemplateCli/pkg/config"
+	"github.com/jean3690/ct-cli/cmd/snippet"
+	"github.com/jean3690/ct-cli/cmd/template"
+	"github.com/jean3690/ct-cli/pkg/config"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 )

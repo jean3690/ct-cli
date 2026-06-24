@@ -3,7 +3,7 @@ package snippet
 import (
 	"fmt"
 
-	"github.com/jean/codeTemplateCli/pkg/snippet"
+	"github.com/jean3690/ct-cli/pkg/snippet"
 	"github.com/spf13/cobra"
 )
 

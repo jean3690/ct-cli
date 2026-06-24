@@ -5,7 +5,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/jean/codeTemplateCli/pkg/engine"
+	"github.com/jean3690/ct-cli/pkg/engine"
 	"gopkg.in/yaml.v3"
 )
 

@@ -8,9 +8,9 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/jean/codeTemplateCli/pkg/engine"
-	"github.com/jean/codeTemplateCli/pkg/output"
-	tmplpkg "github.com/jean/codeTemplateCli/pkg/template"
+	"github.com/jean3690/ct-cli/pkg/engine"
+	"github.com/jean3690/ct-cli/pkg/output"
+	tmplpkg "github.com/jean3690/ct-cli/pkg/template"
 )
 
 // Scaffold generates a project from a template directory.

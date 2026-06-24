@@ -7,7 +7,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 `ct-cli` is a Go CLI tool for managing code templates and snippets. It scaffolds projects from templates and generates files into existing projects using Go's `text/template` engine with interactive prompts (survey.v2).
 
 **Binary:** `ct-cli`  
-**Module:** `github.com/jean/codeTemplateCli` (Go 1.26.4)  
+**Module:** `github.com/jean3690/ct-cli` (Go 1.26.4)  
 **Data directory:** `~/.codeTemplate/` (override with `CT_HOME` env var)
 
 ## Build & test

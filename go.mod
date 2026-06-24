@@ -1,4 +1,4 @@
-module github.com/jean/codeTemplateCli
+module github.com/jean3690/ct-cli
 
 go 1.26.4
 

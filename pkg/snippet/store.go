@@ -7,7 +7,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/jean/codeTemplateCli/pkg/config"
+	"github.com/jean3690/ct-cli/pkg/config"
 	"gopkg.in/yaml.v3"
 )
 
