@@ -16,10 +16,10 @@ const version = "0.1.0"
 var cfgFile string
 
 var rootCmd = &cobra.Command{
-	Use:     "ct",
+	Use:     "ct-cli",
 	Version: version,
-	Short:   "ct — a code template and scaffolding CLI",
-	Long: `ct is a CLI tool for managing code templates, scaffolding projects,
+	Short:   "ct-cli — a code template and scaffolding CLI",
+	Long: `ct-cli is a CLI tool for managing code templates, scaffolding projects,
 and organizing code snippets.
 
 Store templates and snippets under ~/.codeTemplate/ and generate

@@ -4,7 +4,7 @@
 *.dll
 *.so
 *.dylib
-ct
+ct-cli
 
 # Test binary, built with go test -c
 *.test
@@ -20,6 +20,9 @@ vendor/
 .vscode/
 *.swp
 *.swo
+
+# Claude
+.claude/settings.local.json
 
 # OS
 .DS_Store

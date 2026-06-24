@@ -1,4 +1,4 @@
-# ct — Code Template CLI / 代码模板命令行工具
+# ct-cli — Code Template CLI / 代码模板命令行工具
 
 [English](#english) | [中文](#中文)
 
@@ -19,15 +19,15 @@ Or build from source:
 ```bash
 git clone https://github.com/jean/codeTemplateCli.git
 cd codeTemplateCli
-go build -o ct .
+go build -o ct-cli .
 ```
 
 ### Quick Start
 
 ```bash
-ct init                         # Initialize ~/.codeTemplate/
-ct template import --git https://github.com/user/go-service-template
-ct new go-service-template my-project
+ct-cli init                         # Initialize ~/.codeTemplate/
+ct-cli template import --git https://github.com/user/go-service-template
+ct-cli new go-service-template my-project
 ```
 
 ### Commands
@@ -36,8 +36,8 @@ ct new go-service-template my-project
 
 | Command | Description |
 |---|---|
-| `ct new [template] [dir]` | Scaffold a new project |
-| `ct generate [template]` | Generate files into current directory |
+| `ct-cli new [template] [dir]` | Scaffold a new project |
+| `ct-cli generate [template]` | Generate files into current directory |
 
 Both support `--var Name=value`, `--dry-run`, and `--yes`.
 
@@ -45,31 +45,31 @@ Both support `--var Name=value`, `--dry-run`, and `--yes`.
 
 | Command | Description |
 |---|---|
-| `ct template list [-l lang]` | List installed templates |
-| `ct template info <name>` | Show template details |
-| `ct template import <path>\|[url]` | Import from local dir or git (`--git`) |
-| `ct template remove <name>` | Remove a template |
-| `ct template init <name>` | Scaffold a new template skeleton |
-| `ct template edit <name>` | Open template dir in `$EDITOR` |
+| `ct-cli template list [-l lang]` | List installed templates |
+| `ct-cli template info <name>` | Show template details |
+| `ct-cli template import <path>\|[url]` | Import from local dir or git (`--git`) |
+| `ct-cli template remove <name>` | Remove a template |
+| `ct-cli template init <name>` | Scaffold a new template skeleton |
+| `ct-cli template edit <name>` | Open template dir in `$EDITOR` |
 
 **Snippet management**
 
 | Command | Description |
 |---|---|
-| `ct snippet create <name>` | Create a snippet |
-| `ct snippet list [-l lang]` | List snippets |
-| `ct snippet get <name>` | Display snippet content |
-| `ct snippet update <name>` | Edit a snippet |
-| `ct snippet search <query>` | Search snippets |
-| `ct snippet delete <name>` | Delete a snippet |
+| `ct-cli snippet create <name>` | Create a snippet |
+| `ct-cli snippet list [-l lang]` | List snippets |
+| `ct-cli snippet get <name>` | Display snippet content |
+| `ct-cli snippet update <name>` | Edit a snippet |
+| `ct-cli snippet search <query>` | Search snippets |
+| `ct-cli snippet delete <name>` | Delete a snippet |
 
 **Configuration**
 
 | Command | Description |
 |---|---|
-| `ct config show` | Display config |
-| `ct config set <key> <value>` | Set a config value |
-| `ct init` | Initialize data directory |
+| `ct-cli config show` | Display config |
+| `ct-cli config set <key> <value>` | Set a config value |
+| `ct-cli init` | Initialize data directory |
 
 ### Template Authoring
 
@@ -145,15 +145,15 @@ go install github.com/jean/codeTemplateCli@latest
 ```bash
 git clone https://github.com/jean/codeTemplateCli.git
 cd codeTemplateCli
-go build -o ct .
+go build -o ct-cli .
 ```
 
 ### 快速开始
 
 ```bash
-ct init                         # 初始化 ~/.codeTemplate/ 目录
-ct template import --git https://github.com/user/go-service-template
-ct new go-service-template my-project
+ct-cli init                         # 初始化 ~/.codeTemplate/ 目录
+ct-cli template import --git https://github.com/user/go-service-template
+ct-cli new go-service-template my-project
 ```
 
 ### 命令参考
@@ -162,8 +162,8 @@ ct new go-service-template my-project
 
 | 命令 | 说明 |
 |---|---|
-| `ct new [模板] [目录]` | 从模板生成新项目 |
-| `ct generate [模板]` | 将模板文件生成到当前目录 |
+| `ct-cli new [模板] [目录]` | 从模板生成新项目 |
+| `ct-cli generate [模板]` | 将模板文件生成到当前目录 |
 
 均支持 `--var Name=value` 传递变量、`--dry-run` 预览、`--yes` 跳过交互。
 
@@ -171,31 +171,31 @@ ct new go-service-template my-project
 
 | 命令 | 说明 |
 |---|---|
-| `ct template list [-l 语言]` | 列出已安装的模板 |
-| `ct template info <名称>` | 查看模板详情与变量 |
-| `ct template import <路径>\|[URL]` | 从本地目录或 git 仓库导入（`--git`） |
-| `ct template remove <名称>` | 删除模板 |
-| `ct template init <名称>` | 创建一个新的模板骨架 |
-| `ct template edit <名称>` | 在编辑器中打开模板目录 |
+| `ct-cli template list [-l 语言]` | 列出已安装的模板 |
+| `ct-cli template info <名称>` | 查看模板详情与变量 |
+| `ct-cli template import <路径>\|[URL]` | 从本地目录或 git 仓库导入（`--git`） |
+| `ct-cli template remove <名称>` | 删除模板 |
+| `ct-cli template init <名称>` | 创建一个新的模板骨架 |
+| `ct-cli template edit <名称>` | 在编辑器中打开模板目录 |
 
 **代码片段**
 
 | 命令 | 说明 |
 |---|---|
-| `ct snippet create <名称>` | 创建片段（交互式或通过参数） |
-| `ct snippet list [-l 语言]` | 列出片段 |
-| `ct snippet get <名称>` | 查看片段内容 |
-| `ct snippet update <名称>` | 编辑片段 |
-| `ct snippet search <关键词>` | 按名称/描述/标签搜索 |
-| `ct snippet delete <名称>` | 删除片段 |
+| `ct-cli snippet create <名称>` | 创建片段（交互式或通过参数） |
+| `ct-cli snippet list [-l 语言]` | 列出片段 |
+| `ct-cli snippet get <名称>` | 查看片段内容 |
+| `ct-cli snippet update <名称>` | 编辑片段 |
+| `ct-cli snippet search <关键词>` | 按名称/描述/标签搜索 |
+| `ct-cli snippet delete <名称>` | 删除片段 |
 
 **配置**
 
 | 命令 | 说明 |
 |---|---|
-| `ct config show` | 查看所有配置 |
-| `ct config set <键> <值>` | 设置并保存配置项 |
-| `ct init` | 初始化数据目录 |
+| `ct-cli config show` | 查看所有配置 |
+| `ct-cli config set <键> <值>` | 设置并保存配置项 |
+| `ct-cli init` | 初始化数据目录 |
 
 **全局标志：** `-c, --config`、`-v, --verbose`、`-y, --yes`（跳过所有确认）
 
@@ -270,7 +270,7 @@ postGenerate: "cd {{ .ProjectName }} && go mod tidy"
 └── snippets/     # 保存的片段
 ```
 
-常用配置项（`ct config set <键> <值>`）：
+常用配置项（`ct-cli config set <键> <值>`）：
 
 | 键 | 说明 | 默认值 |
 |---|---|---|
@@ -284,18 +284,18 @@ postGenerate: "cd {{ .ProjectName }} && go mod tidy"
 
 ```bash
 # 1. 创建自己的模板
-ct template init my-go-template --lang go
+ct-cli template init my-go-template --lang go
 
 # 2. 编辑 manifest.yaml，放入模板文件到 files/ 目录
 
 # 3. 导入模板
-ct template import ./my-go-template
+ct-cli template import ./my-go-template
 
 # 4. 生成项目
-ct new my-go-template hello-app
+ct-cli new my-go-template hello-app
 
 # 5. 非交互模式
-ct new my-go-template hello-app -y --var ProjectName=hello-app
+ct-cli new my-go-template hello-app -y --var ProjectName=hello-app
 ```
 
 ## License

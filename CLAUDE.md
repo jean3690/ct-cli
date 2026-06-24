@@ -4,16 +4,16 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project overview
 
-`ct` is a Go CLI tool for managing code templates and snippets. It scaffolds projects from templates and generates files into existing projects using Go's `text/template` engine with interactive prompts (survey.v2).
+`ct-cli` is a Go CLI tool for managing code templates and snippets. It scaffolds projects from templates and generates files into existing projects using Go's `text/template` engine with interactive prompts (survey.v2).
 
-**Binary:** `ct`  
+**Binary:** `ct-cli`  
 **Module:** `github.com/jean/codeTemplateCli` (Go 1.26.4)  
 **Data directory:** `~/.codeTemplate/` (override with `CT_HOME` env var)
 
 ## Build & test
 
 ```bash
-go build -o ct.exe .          # build
+go build -o ct-cli.exe .      # build
 go vet ./...                   # lint
 go test ./...                  # run all tests
 go test ./pkg/engine/          # single package tests
@@ -28,7 +28,7 @@ main.go → cmd.Execute()
 ### Command tree (cobra)
 
 ```
-ct
+ct-cli
 ├── new [template] [dir]    — scaffold a new project from a template
 ├── generate [template]     — generate files into the current directory (no new dir)
 ├── init                    — create ~/.codeTemplate/ directory structure
@@ -90,4 +90,4 @@ postGenerate: "go mod init {{ .ProjectName }}"
 - **Variable passing:** `--var Name=value` flags on `new` and `generate`, parsed by `parseVarFlags()` in `cmd/new.go`.
 - **Global flags:** `--config`/`-c` (config file path), `--verbose`/`-v`, `--yes`/`-y` (skip interactive prompts). All bound to viper.
 - **Interactive vs non-interactive:** `config.IsInteractive()` returns `true` unless `--yes` is set or `defaults.interactive` is false.
-- **Template fallback:** If the first arg to `ct new` isn't a known template but a default is configured, it's treated as the destination directory.
+- **Template fallback:** If the first arg to `ct-cli new` isn't a known template but a default is configured, it's treated as the destination directory.
